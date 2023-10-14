@@ -7,6 +7,17 @@
   <link rel="shortcut icon" href="images/logo.jpg">
   <style>
     body {
+	.capsule-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px; /* 调整这个值以控制按钮的圆角大小 */
+  background-color: #007bff; /* 按钮的背景颜色 */
+  color: #fff; /* 按钮的文字颜色 */
+  font-size: 16px; /* 按钮的文字大小 */
+  border: none; /* 去除按钮的边框 */
+  cursor: pointer;
+}
+
       background-image: url('images/stg3bg1.png');
 	      background-repeat: repeat;;
         padding-top: 50px;
@@ -136,7 +147,7 @@
                   <input type="radio" name="type" id="hangingSignToggle" value="hanging-sign" />
                   <img src="hanging-sign.webp" /></label>
           </p>
-          <p><button onclick="main()">绘制 Draw</button></p>
+          <p><button class="capsule-button" onclick="main()">绘制 Draw</button></p>
           <div id="canvasContainer"></div>
           <div id="artContainer"></div>
       </body>
